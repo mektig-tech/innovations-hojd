@@ -146,6 +146,12 @@ console.log(
 	`📄 Found ${entrypoints.length} HTML ${entrypoints.length === 1 ? "file" : "files"} to process\n`,
 );
 
+// Get repository name for GitHub Pages public path
+const getPublicPath = () => {
+	const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] || "";
+	return process.env.GITHUB_ACTIONS ? `/${repoName}/` : "/";
+};
+
 // Build all the HTML files
 const result = await build({
 	entrypoints,
@@ -154,6 +160,7 @@ const result = await build({
 	minify: true,
 	target: "browser",
 	sourcemap: "linked",
+	publicPath: getPublicPath(),
 	define: {
 		"process.env.NODE_ENV": JSON.stringify("production"),
 	},
