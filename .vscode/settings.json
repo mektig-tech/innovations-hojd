@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.organizeImports.biome": "always",
+    "source.fixAll.biome": "explicit"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
