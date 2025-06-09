@@ -16,13 +16,18 @@
   }
 }
 
+@theme {
+  --color-wing-base: hsl(240, 25%, 19%, 1);
+  --color-wing-base-neutral: hsl(239, 29%, 68%, 1);
+}
+
 @layer base {
   :root {
     @apply text-black bg-white font-sans;
   }
 
   body {
-    @apply grid place-content-evenly min-w-[320px] min-h-screen relative m-0;
+    /* @apply grid place-content-evenly min-w-[320px] min-h-screen relative m-0; */
   }
 }
 
