@@ -148,6 +148,13 @@ console.log(
 
 // Get repository name for GitHub Pages public path
 const getPublicPath = () => {
+	// Check if using custom domain
+	const hasCustomDomain = process.env.CUSTOM_DOMAIN === "true";
+
+	if (hasCustomDomain) {
+		return "/";
+	}
+
 	const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] || "";
 	return process.env.GITHUB_ACTIONS ? `/${repoName}/` : "/";
 };
