@@ -35,11 +35,11 @@ export function App() {
 					</div>
 				</div>
 			</section>
-			<section className="text-white mx-auto p-4 relative z-10 min-h-screen grid place-items-center bg-gradient-to-br from-wing-base to-wing-base-neutral">
+			<section className=" text-white mx-auto p-4 relative z-10 min-h-screen grid place-items-center bg-gradient-to-br from-wing-base to-wing-base-neutral">
 				<div className="flex-col sm:justify-center items-center flex gap-26 max-w-[1000px] animate-fadeIn delay-500">
 					<img
 						src={logoWingler}
-						className="w-full h-90 animate-spin-slow"
+						className="h-60 animate-spin-slow"
 						alt="Bun logo"
 					/>
 					<div className="pl-2 sm:pl-4 flex flex-col gap-4 border-l-6 border-white/40">
@@ -47,18 +47,30 @@ export function App() {
 							Wingler®
 						</h1>
 						<p className="text:lg sm:text-2xl text-gray-300 animate-fadeIn">
-							Innovatinshöjds första mobilapplication, Wingler®. Wingler är en
-							smart samåknings app som kalkulerar alla resekostnader
+							Innovationshöjd presenterar stolt sin första mobilapplikation –
+							<span className="text-wing-accent"> Wingler®</span>
+							<br />
+							<br />
+							<span className="text-wing-accent"> Wingler®</span> är en
+							innovativ samåkningsapp som gör det enkelt att resa smartare,
+							tillsammans. Appen beräknar automatiskt och rättvist alla
+							resekostnader, vilket gör det smidigt att dela på kostnaderna –
+							oavsett om det gäller pendling, weekendresor eller spontana
+							bilfärder. Med lansering på både iOS och Android förenklar
+							<span className="text-wing-accent"> Wingler®</span> vardagen för
+							både förare och passagerare – och bidrar samtidigt till ett mer
+							hållbart resande.
 						</p>
 					</div>
 					<div className="text-center">
-						<p className="text-lg mb-4">Innovationshöjd Sverige AB</p>
-						<p>Besöksadress: Kungsgatan 43, 632 17 Eskilstuna</p>
+						<p className="text-lg mb-4">Wingler®</p>
 						<a
-							href="mailto:lennart.kisswani@innovationshojd.se"
+							href="https://www.wingler.app"
+							target="_blank"
 							className="text-blue-500 hover:underline"
+							rel="noreferrer"
 						>
-							lennart.kisswani@innovationshojd.se
+							www.wingler.app
 						</a>
 					</div>
 				</div>

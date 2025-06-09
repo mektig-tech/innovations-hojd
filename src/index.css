@@ -15,10 +15,13 @@
     }
   }
 }
-
 @theme {
   --color-wing-base: hsl(240, 25%, 19%, 1);
-  --color-wing-base-neutral: hsl(239, 29%, 68%, 1);
+  --color-wing-base-neutral: hsl(240, 25%, 11%);
+  --color-wing-accent: hsl(40, 88%, 53%, 1);
+}
+
+@layer components {
 }
 
 @layer base {
