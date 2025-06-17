@@ -60,7 +60,7 @@ export function App() {
 							Resultatet? En enklare vardag och ett mer hållbart resande.
 						</p>
 					</div>
-					<div className="text-center">
+					{/* <div className="text-center">
 						<a
 							href="https://www.wingler.app"
 							target="_blank"
@@ -69,7 +69,7 @@ export function App() {
 						>
 							Till innovations höjd hemsida Wingler
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		</>
